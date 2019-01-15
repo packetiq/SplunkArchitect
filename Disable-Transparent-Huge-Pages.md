@@ -16,6 +16,11 @@ More information about Splunk and Transparent Huge Pages can be found at these l
 
 [How do I disable Transparent Huge Pages (THP) and confirm that it is disabled?] (https://answers.splunk.com/answers/188875/how-do-i-disable-transparent-huge-pages-thp-and-co.html)
 
+Disable Huge pages command :
+```
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
+```
+
 [How to use, monitor, and disable transparent hugepages in Red Hat Enterprise Linux 6?] (https://access.redhat.com/solutions/46111)  
 
 
