@@ -39,3 +39,15 @@ server=x.x.x.x:9997
 /opt/splunk/bin/splunk clean eventdata -index yourindex
 
 ====================
+================
+/// max searches 
+$ sudo vim $SPLUNK_HOME/etc/system/local/limits.conf
+
+[search]
+base_max_searches=100
+max_searches_per_cpu=10
+
+================
+///disable kvstore
+[kvstore]
+disabled = true
